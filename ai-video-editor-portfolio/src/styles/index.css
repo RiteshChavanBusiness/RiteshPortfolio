@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { scroll-behavior: smooth; }
+html, body, #root { height: 100%; }
+
+.section { @apply container py-16 md:py-24; }
+.card { @apply bg-card border border-border rounded-2xl p-6 shadow-soft; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium bg-primary text-white hover:opacity-90 transition; }
+.badge { @apply inline-flex items-center gap-2 rounded-full border border-border bg-muted/40 px-3 py-1 text-sm; }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
