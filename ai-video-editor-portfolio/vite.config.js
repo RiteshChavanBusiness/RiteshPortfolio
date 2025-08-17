@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// 👇 yaha apne repo ka name dal
 export default defineConfig({
   plugins: [react()],
-  base: '/Ritesh-Portfolio/', // 👈 yeh jaruri hai GitHub Pages ke liye
+  base: '/RiteshPortfolio/', 
 })
